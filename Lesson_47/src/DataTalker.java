@@ -20,6 +20,6 @@ public class DataTalker {
 	    	s1.put((Object)text[x].substring(0,text[x].indexOf("=")-1), (Object)text[x].substring(text[x].indexOf("=")+1));
 	    	x++;
 	    }
-	    
+	    //sdfsdyhivsghdvgsdvyhfa
 	}
 }
