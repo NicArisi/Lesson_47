@@ -14,12 +14,24 @@ public class DataTalker {
 	    }
 	    
 	    //map stuff start
-	    Set<String> s1 = new HashSet<String>();
-	    int x=0;
-	    while(text[x]!=null) {
-	    	s1.put((Object)text[x].substring(0,text[x].indexOf("=")-1), (Object)text[x].substring(text[x].indexOf("=")+1));
-	    	x++;
+	    Map<String, String> s1 = new TreeMap<String, String>();
+	    int num= Integer.parseInt(text[0]);
+	    for(int y=1; y<=num; y++) {
+	    	Scanner sc= new Scanner(text[y]);
+	    	sc.useDelimiter("=");
+	    	s1.put(sc.next(), sc.next());
 	    }
+	    String sentence = text[14];
+	    String word[] = sentence.split("");
+	    for(int j=0;j<word.length;j++) {
+	    	if(s1.containsKey(word[j])) {
+	    		System.out.print(s1.get(word[j])+" ");
+	    	}else {
+	    		System.out.print((word[j])+" ");
+	    	}
+	    	
+	    }
+
 	    //sdfsdyhivsghdvgsdvyhfa
 	    //please help me
 	}
