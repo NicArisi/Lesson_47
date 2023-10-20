@@ -32,15 +32,7 @@ public class Histogram {
 	    	String key = iter.next();
 	    	Integer val = s1.get(key);
 	    	System.out.println(key + ", " + val);
-	    }
-	    //those * map
-	    Set s3 = s1.keySet();
-	    Iterator<String> iter2 = s3.iterator();
-	    while(iter.hasNext()){
-	    	Object key = iter.next();
-	    	Object val = s1.get(key);
-	    	String[] Astrixes = {"*", "**", "***"};
-	    	System.out.println(key + ", " + Astrixes[(int)val-1]);
+	    	System.out.printf("Here are the first %d chars: %.*s\n", 8, 8, "A string that is more than 8 chars");
 	    }
 	}
 
