@@ -32,7 +32,7 @@ public class Histogram {
 	    	String key = iter.next();
 	    	Integer val = s1.get(key);
 	    	System.out.println(key + ", " + val);
-	    	System.out.printf("Here are the first %d chars: %.*s\n", 8, 8, "A string that is more than 8 chars");
+	    	System.out.printf(key+ "%.*s%n", val, val, "A string that is more than 8 chars");
 	    }
 	}
 
